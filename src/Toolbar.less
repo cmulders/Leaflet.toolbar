@@ -19,7 +19,7 @@
 	padding-left: 0;
 	.leaflet-toolbar-box-shadow();
 
-	> li { 
+	> li {
 		position: relative;
 		
 		> .leaflet-toolbar-icon {
@@ -93,7 +93,7 @@
 
 		height: @toolbar-icon-size;
 
-		> li { display: inline-block; }
+		> li { display: inline-block; vertical-align:top; }
 		> li > .leaflet-toolbar-icon {
 			.leaflet-toolbar-icon();
 
@@ -142,4 +142,28 @@
 			height: @toolbar-icon-size;
 		}	
 	}
+}
+
+.leaflet-touch {
+    .leaflet-control-toolbar .leaflet-toolbar-1 {
+        left: 30px;
+        height: 30px;
+        
+        > li > .leaflet-toolbar-icon {
+            height: 30px;
+            line-height:30px;
+        }
+    }
+    
+    .leaflet-control-toolbar.leaflet-toolbar-0 {
+        box-shadow: none;
+        border: 2px solid rgba(0, 0, 0, 0.2);
+    }
+    
+    .leaflet-toolbar-0 > li > .leaflet-toolbar-icon {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
 }

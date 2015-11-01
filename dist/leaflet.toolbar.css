@@ -71,6 +71,7 @@
 }
 .leaflet-control-toolbar .leaflet-toolbar-1 > li {
   display: inline-block;
+  vertical-align: top;
 }
 .leaflet-control-toolbar .leaflet-toolbar-1 > li > .leaflet-toolbar-icon {
   display: block;
@@ -114,4 +115,21 @@
   float: left;
   width: 26px;
   height: 26px;
+}
+.leaflet-touch .leaflet-control-toolbar .leaflet-toolbar-1 {
+  left: 30px;
+  height: 30px;
+}
+.leaflet-touch .leaflet-control-toolbar .leaflet-toolbar-1 > li > .leaflet-toolbar-icon {
+  height: 30px;
+  line-height: 30px;
+}
+.leaflet-touch .leaflet-control-toolbar.leaflet-toolbar-0 {
+  box-shadow: none;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+.leaflet-touch .leaflet-toolbar-0 > li > .leaflet-toolbar-icon {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
 }
